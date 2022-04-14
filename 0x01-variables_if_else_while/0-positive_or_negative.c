@@ -2,14 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success/correct)
  */ 
 
 int main(void)
 {
-int n: 
+int n;
+
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
