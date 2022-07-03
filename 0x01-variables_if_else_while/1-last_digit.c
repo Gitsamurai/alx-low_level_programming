@@ -3,24 +3,34 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- *
- * Description: Prints a number and it's last digit along with whether its
- * last digit is 0, greater than 5, or less than 6 and not 0.
- * Return: 0
- * */
-
+ *  *main -> assign a random number to the variable n each time it is executed
+ *   *and print the last digit of the number stored in the variable n
+ *    *Return: Always 0 (Success)
+ *     */
 int main(void)
 {
-int n;
+		int n;
+			int x;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
+				srand(time(0));
+					n = rand() - RAND_MAX / 2;
 
-printf("last digit of %d is %d %s \n", n, n % 10, 
-((n % 10) == 0) ? "and is 0"
-: (((n % 10) > 5) ? "and is greater than 5"
-: "and is less than 6 and not 0"));
+						x = n % 10;
+							printf("Last digit of %d is %d ", n, x);
+								if (x > 5)
+										{
+													printf("and is greater than 5");
+														}
+									if (x == 0)
+											{
+														printf("and is 0");
+															}
+										if (x < 6 && x != 0)
+												{
+															printf("and is less than 6 and not 0");
+																}
 
-return (0);
+											printf("\n");
+
+												return (0);
 }
